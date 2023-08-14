@@ -3,12 +3,12 @@ body {
     font-family: 'Oswald', sans-serif;
     font-size: 20px;
     background: linear-gradient(to right, rgb(255, 116, 105), rgb(253, 64, 97));
+    overflow: hidden;
 }
 
 .container {
     position: relative;
     height: 100vh;
-    overflow: hidden;
 }
 
 .header {
@@ -16,17 +16,13 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 200px;
+    padding: 20px; /* Добавим отступы для контента внутри .header */
     background-color: black;
-    font-size: 45px;
+    font-size: 2rem; /* Используем rem для отзывчивого размера шрифта */
     color: darkgray;
-    display: flex;  
-}
-
-.header-item {
-    margin-top: 120px;
-    margin-left: 75%;
-    color: white; 
+    display: flex; /* Добавим гибкую модель раскладки */
+    justify-content: space-around; /* Распределение элементов по горизонтали */
+    align-items: center; /* Выравнивание элементов по вертикали */
 }
 
 .viewportImg {
@@ -36,36 +32,53 @@ body {
     width: 100%;
     bottom: 0;
     background-image: url(..//images/Tittle_mystery1.png);
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
 }
 
 .btnPlayMarket {
     position: absolute; 
     top: 65%; 
-    left: 25%;
+    left: 40%; /* Центрируем кнопку по горизонтали */
+    transform: translateX(-50%); /* Корректируем позиционирование */
     border-radius: 15%;
     box-shadow: 5px 5px 5px rgb(30, 24, 24);
     background-image: url(../images/Google-Play-New-Logo.png);
     background-size: cover;
     background-position: center;
-    width: 450px;
-    height: 200px;
+    width: 100%; /* Заполнение доступной ширины */
+    max-width: 450px; /* Максимальная ширина кнопки */
+    height: 180px; /* Автоматическая высота */
+    max-height: 250px;
 }
 
 .btnPlayMarket:hover {
     background-color: transparent;
 }
 
+/* Медиазапрос для мобильных устройств */
+@media (max-width: 768px) {
+    .header {
+        font-size: 1.5rem;
+        flex-direction: column; /* Элементы в столбец */
+        text-align: center; /* Выравнивание по центру */
+    }
+
+    .btnPlayMarket {
+        top: 75%; /* Позиция кнопки для мобильных */
+    }
+}
+
+
+
 .privacy
 {
     width: 600px;
-    margin: 0 auto;
+    max-height: 900px;
+    margin: 10px auto;
     background-color: rgb(30, 18, 30);
     padding: 0 20px 20px 20px;
     color: darkgray;
+    overflow: auto;
 }
 
 a
