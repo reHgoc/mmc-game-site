@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: 'Oswald', sans-serif;
-    font-size: 20px; /* Размер базового шрифта */
+    font-size: 20px;
     background: linear-gradient(to right, rgb(255, 116, 105), rgb(253, 64, 97));
     overflow: hidden;
 }
@@ -19,7 +19,7 @@ body {
     left: 0;
     width: 100%;
     background-color: black;
-    font-size: 2rem; /* Размер шрифта в шапке */
+    font-size: 1,5rem; /* Размер шрифта в шапке */
     color: darkgray;
     display: flex;
     justify-content: space-around;
@@ -29,7 +29,7 @@ body {
 /* Контейнер для изображения */
 .viewportImg {
     position: absolute;
-    top: 20vh; /* Расстояние от верха страницы */
+    top: 12vh; /* Расстояние от верха страницы */
     left: 0;
     width: 100%;
     bottom: 0;
@@ -40,8 +40,8 @@ body {
 /* Кнопка */
 .btnPlayMarket {
     position: absolute;
-    top: 70vh;
-    left: 40vw;
+    top: 59vh;
+    left: 30vw;
     transform: translateX(-50%);
     border-radius: 15%;
     box-shadow: 0.5rem 0.5rem 0.5rem rgb(30, 24, 24);
@@ -78,7 +78,20 @@ body {
     padding: 0 20px 20px 20px;
     color: darkgray;
     overflow: auto;
-    scrollbar-color: brown;
+    font-size: 1.5rem;
+}
+
+.privacy::-webkit-scrollbar 
+{
+    width: 1rem;               /* ширина scrollbar */
+}
+.privacy::-webkit-scrollbar-track 
+{
+    background: transparent;        /* цвет дорожки */
+}
+.privacy::-webkit-scrollbar-thumb 
+{
+    background: transparent;    
 }
 
 a
