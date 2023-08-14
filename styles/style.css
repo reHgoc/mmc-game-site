@@ -46,9 +46,9 @@ body {
     background-size: cover;
     background-position: center;
     width: 100%; /* Заполнение доступной ширины */
-    max-width: 450px; /* Максимальная ширина кнопки */
+    max-width: 200px; /* Максимальная ширина кнопки */
     height: 180px; /* Автоматическая высота */
-    max-height: 250px;
+    max-height: 80px;
 }
 
 .btnPlayMarket:hover {
@@ -68,8 +68,6 @@ body {
     }
 }
 
-
-
 .privacy
 {
     width: 600px;
@@ -79,6 +77,7 @@ body {
     padding: 0 20px 20px 20px;
     color: darkgray;
     overflow: auto;
+    scrollbar-color: brown;
 }
 
 a
