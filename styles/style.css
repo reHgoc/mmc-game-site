@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: 'Oswald', sans-serif;
-    font-size: 16px; /* Размер базового шрифта */
+    font-size: 20px; /* Размер базового шрифта */
     background: linear-gradient(to right, rgb(255, 116, 105), rgb(253, 64, 97));
     overflow: hidden;
 }
@@ -29,7 +29,7 @@ body {
 /* Контейнер для изображения */
 .viewportImg {
     position: absolute;
-    top: 9vh; /* Расстояние от верха страницы */
+    top: 20vh; /* Расстояние от верха страницы */
     left: 0;
     width: 100%;
     bottom: 0;
@@ -40,7 +40,7 @@ body {
 /* Кнопка */
 .btnPlayMarket {
     position: absolute;
-    top: 60vh; /* Расстояние от верха страницы */
+    top: 70vh;
     left: 40vw;
     transform: translateX(-50%);
     border-radius: 15%;
@@ -48,8 +48,8 @@ body {
     background-image: url(../images/Google-Play-New-Logo.png);
     background-size: contain;
     background-position: center;
-    width: 14rem; /* Ширина кнопки */
-    height: 8rem; /* Высота кнопки */
+    width: 14rem; 
+    height: 8rem; 
 }
 
 .btnPlayMarket:hover {
@@ -59,7 +59,7 @@ body {
 /* Медиазапрос для адаптивности */
 @media (max-width: 768px) {
     .header {
-        font-size: 1.5rem;
+        font-size: 2rem;
         flex-direction: column;
         text-align: center;
     }
