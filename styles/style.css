@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: 'Oswald', sans-serif;
-    font-size: 20px;
+    font-size: 16px; /* Размер базового шрифта */
     background: linear-gradient(to right, rgb(255, 116, 105), rgb(253, 64, 97));
     overflow: hidden;
 }
@@ -9,25 +9,28 @@ body {
 .container {
     position: relative;
     height: 100vh;
+    overflow: hidden;
 }
 
+/* Шапка */
 .header {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px; /* Добавим отступы для контента внутри .header */
+    padding: 1rem; /* Поля вокруг текста */
     background-color: black;
-    font-size: 2rem; /* Используем rem для отзывчивого размера шрифта */
+    font-size: 2rem; /* Размер шрифта в шапке */
     color: darkgray;
-    display: flex; /* Добавим гибкую модель раскладки */
-    justify-content: space-around; /* Распределение элементов по горизонтали */
-    align-items: center; /* Выравнивание элементов по вертикали */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
+/* Контейнер для изображения */
 .viewportImg {
     position: absolute;
-    top: 200px;
+    top: 20vh; /* Расстояние от верха страницы */
     left: 0;
     width: 100%;
     bottom: 0;
@@ -35,36 +38,35 @@ body {
     background-size: cover;
 }
 
+/* Кнопка */
 .btnPlayMarket {
-    position: absolute; 
-    top: 65%; 
-    left: 40%; /* Центрируем кнопку по горизонтали */
-    transform: translateX(-50%); /* Корректируем позиционирование */
+    position: absolute;
+    top: 65vh; /* Расстояние от верха страницы */
+    left: 50%;
+    transform: translateX(-50%);
     border-radius: 15%;
-    box-shadow: 5px 5px 5px rgb(30, 24, 24);
+    box-shadow: 0.5rem 0.5rem 0.5rem rgb(30, 24, 24);
     background-image: url(../images/Google-Play-New-Logo.png);
-    background-size: cover;
+    background-size: contain;
     background-position: center;
-    width: 100%; /* Заполнение доступной ширины */
-    max-width: 200px; /* Максимальная ширина кнопки */
-    height: 180px; /* Автоматическая высота */
-    max-height: 80px;
+    width: 12rem; /* Ширина кнопки */
+    height: 12rem; /* Высота кнопки */
 }
 
 .btnPlayMarket:hover {
     background-color: transparent;
 }
 
-/* Медиазапрос для мобильных устройств */
+/* Медиазапрос для адаптивности */
 @media (max-width: 768px) {
     .header {
         font-size: 1.5rem;
-        flex-direction: column; /* Элементы в столбец */
-        text-align: center; /* Выравнивание по центру */
+        flex-direction: column;
+        text-align: center;
     }
 
     .btnPlayMarket {
-        top: 75%; /* Позиция кнопки для мобильных */
+        top: 75vh; /* Расстояние от верха страницы */
     }
 }
 
