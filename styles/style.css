@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    background: linear-gradient(to right, rgb(255, 116, 105), rgb(253, 64, 97));
+}
+
+.container {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background-color: black;
+    font-size: 45px;
+    color: darkgray;
+    display: flex;  
+}
+
+.header-item {
+    margin-top: 120px;
+    margin-left: 75%;
+    color: white; 
+}
+
+.viewportImg {
+    position: absolute;
+    top: 200px;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    background-image: url(..//images/Tittle_mystery1.png);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.btnPlayMarket {
+    position: absolute; 
+    top: 65%; 
+    left: 25%;
+    border-radius: 15%;
+    box-shadow: 5px 5px 5px rgb(30, 24, 24);
+    background-image: url(../images/Google-Play-New-Logo.png);
+    background-size: cover;
+    background-position: center;
+    width: 450px;
+    height: 200px;
+}
+
+.btnPlayMarket:hover {
+    background-color: transparent;
+}
+
+.privacy
+{
+    width: 600px;
+    margin: 0 auto;
+    background-color: rgb(30, 18, 30);
+    padding: 0 20px 20px 20px;
+    color: darkgray;
+}
+
+a
+{
+    color: darkgray;
+}
